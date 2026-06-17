@@ -83,6 +83,11 @@ Track live matches, browse upcoming fixtures, view completed match results, save
 
 ![Favorites](assets/favorites.png)
 
+### Notification
+
+<img width="350" height="604" alt="image" src="https://github.com/user-attachments/assets/b35e8f50-8848-4b64-b522-dd6a8eefa533" />
+
+
 ### Settings
 
 ![Settings](assets/API.png)
