@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFA Reminder Pro</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="app" id="app">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-left">
+        <span class="logo">⚽</span>
+        <div>
+          <div class="app-name">FIFA Reminder Pro</div>
+          <div class="app-sub">World Cup 2026</div>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="icon-btn" id="refreshBtn" title="Refresh">↻</button>
+        <button class="icon-btn" id="darkBtn" title="Toggle dark mode">🌙</button>
+        <button class="icon-btn" id="settingsBtn" title="Settings">⚙</button>
+      </div>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="live">🔴 Live</button>
+      <button class="tab" data-tab="upcoming">📅 Upcoming</button>
+      <button class="tab" data-tab="results">🏁 Results</button>
+      <button class="tab" data-tab="favorites">⭐ Favorites</button>
+    </nav>
+
+    <!-- Setup banner (shown when no API key) -->
+    <div class="setup-banner" id="setupBanner" style="display:none">
+      <div class="setup-icon">🔑</div>
+      <div class="setup-text">Add your <strong>football-data.org</strong> API key to get started</div>
+      <button class="btn-primary" id="setupBtn">Set API Key</button>
+    </div>
+
+    <!-- Content panels -->
+    <main class="content" id="content">
+      <div class="panel active" id="panel-live"></div>
+      <div class="panel" id="panel-upcoming"></div>
+      <div class="panel" id="panel-results"></div>
+      <div class="panel" id="panel-favorites"></div>
+    </main>
+
+    <!-- Settings overlay -->
+    <div class="overlay" id="settingsOverlay" style="display:none">
+      <div class="overlay-card">
+        <div class="overlay-header">
+          <span>⚙ Settings</span>
+          <button class="icon-btn" id="closeSettings">✕</button>
+        </div>
+        <label class="field-label">football-data.org API Key</label>
+        <input type="password" class="field-input" id="apiKeyInput" placeholder="Paste your API key..." />
+        <div class="field-hint">Free key from <a href="https://www.football-data.org/client/register" target="_blank">football-data.org</a></div>
+        <label class="field-label" style="margin-top:12px">Notifications</label>
+        <div class="toggle-row">
+          <span>30-min match reminder</span>
+          <label class="toggle"><input type="checkbox" id="notifReminder" checked /><span class="slider"></span></label>
+        </div>
+        <div class="toggle-row">
+          <span>Half-time & Full-time alerts</span>
+          <label class="toggle"><input type="checkbox" id="notifScores" checked /><span class="slider"></span></label>
+        </div>
+        <button class="btn-primary" id="saveSettings" style="margin-top:16px">Save Settings</button>
+      </div>
+    </div>
+
+    <!-- Last updated footer -->
+    <footer class="footer">
+      <span id="lastUpdated">Loading...</span>
+      <div class="footer-right">
+        <span class="tz-badge">BDT</span>
+        <span class="author-badge">by <strong class="author-name">H4MDiL</strong></span>
+      </div>
+    </footer>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+<!--
+╔══════════════════════════════════════════════╗
+║         FIFA Reminder Pro  v1.0.0            ║
+║         Created by H4MDiL                   ║
+║         © 2026 · All rights reserved         ║
+╚══════════════════════════════════════════════╝
+-->
+</html>
