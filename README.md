@@ -1,4 +1,4 @@
-# ⚽ FIFA Reminder Pro
+# ⚽ FIFA Reminder Pro Extension
 
 <div align="center">
 
