@@ -69,23 +69,23 @@ Track live matches, browse upcoming fixtures, view completed match results, save
 
 ### Live Matches
 
-![Live](screenshots/live.png)
+![Live](assets/live.png)
 
 ### Upcoming Matches
 
-![Upcoming](screenshots/upcoming.png)
+![Upcoming](assets/upcoming.png)
 
 ### Results
 
-![Results](screenshots/result.png)
+![Results](assets/result.png)
 
 ### Favorites
 
-![Favorites](screenshots/favorites.png)
+![Favorites](assets/favorites.png)
 
 ### Settings
 
-![Settings](screenshots/API.png)
+![Settings](assets/API.png)
 
 ---
 
@@ -212,7 +212,7 @@ Sent when match ends
 ├── background.js
 ├── styles.css
 ├── icons/
-├── screenshots/
+├── assets/
 └── README.md
 ```
 
